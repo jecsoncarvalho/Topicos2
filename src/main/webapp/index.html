@@ -7,7 +7,8 @@
 
 <title>Encontre sua Música!</title>
 
-<meta name="description" content="Projeto da disciplina SRI - Encontre Sua Música">
+<meta name="description"
+	content="Projeto da disciplina SRI - Encontre Sua Música">
 <meta name="author"
 	content="Romulo Ferreira, Tiago Guedes e Jecson Carvalho">
 
@@ -30,114 +31,104 @@
 						musicas favorias.
 					</p>
 				</div>
-				<nav class="navbar navbar-default" role="navigation">
-					<button type="button" class="navbar-toggle" data-toggle="collapse"
-						data-target="#bs-example-navbar-collapse-1"></button>
+				<nav class="navbar navbar-form" role="navigation">
+					
 					<a class="navbar-brand" href="#">Encontre sua música</a>
+					
 					<div class="collapse navbar-collapse">
-
 						<form class="navbar-form" role="search">
 							<div class="form-group">
-								<input type="text" class="form-control">
+								<input type="text" class="form-control" id="busca">
 							</div>
-							<button type="submit" class="btn btn-default">Buscar</button>
-
-							<br /> <br />
+							
+							<button type="submit" class="btn btn-primary">Buscar</button>
+							<!-- Lista de estilos musicais -->
+							<select class="form-control">
+								<option>Todos os estilos</option>
+								<option value="axe">Axé</option>
+								<option value="black-music">Black Music</option>
+								<option value="blues">Blues</option>
+								<option value="bossa-nova">Bossa Nova</option>
+								<option value="chillout">Chillout</option>
+								<option value="classic-rock">Classic Rock</option>
+								<option value="classico">Clássico</option>
+								<option value="country">Country</option>
+								<option value="dance">Dance</option>
+								<option value="disco">Disco</option>
+								<option value="electronica">Electronica</option>
+								<option value="emocore">Emocore</option>
+								<option value="fado">Fado</option>
+								<option value="folk">Folk</option>
+								<option value="forro">Forró</option>
+								<option value="funk">Funk</option>
+								<option value="funk-carioca">Funk Carioca</option>
+								<option value="gospel">Gospel/Religioso</option>
+								<option value="gotico">Gótico</option>
+								<option value="grunge">Grunge</option>
+								<option value="hard-rock">Hard Rock</option>
+								<option value="hardcore">Hardcore</option>
+								<option value="heavy-metal">Heavy Metal</option>
+								<option value="hip-hop">Hip Hop</option>
+								<option value="house">House</option>
+								<option value="indie">Indie</option>
+								<option value="industrial">Industrial</option>
+								<option value="infantil">Infantil</option>
+								<option value="instrumental">Instrumental</option>
+								<option value="j-pop">J-Pop/J-Rock</option>
+								<option value="jazz">Jazz</option>
+								<option value="jovem-guarda">Jovem Guarda</option>
+								<option value="k-pop-k-rock">K-Pop/K-Rock</option>
+								<option value="kizomba">Kizomba</option>
+								<option value="metal">Metal</option>
+								<option value="mpb">MPB</option>
+								<option value="new-age">New Age</option>
+								<option value="new-wave">New Wave</option>
+								<option value="pagode">Pagode</option>
+								<option value="piano-rock">Piano Rock</option>
+								<option value="pop">Pop</option>
+								<option value="pop-punk">Pop/Punk</option>
+								<option value="pop-rock">Pop/Rock</option>
+								<option value="pos-punk">Pós-Punk</option>
+								<option value="post-rock">Post-Rock</option>
+								<option value="power-pop">Power-Pop</option>
+								<option value="progressivo">Progressivo</option>
+								<option value="psicodelia">Psicodelia</option>
+								<option value="punk-rock">Punk Rock</option>
+								<option value="r-n-b">R&B</option>
+								<option value="rap">Rap</option>
+								<option value="reggae">Reggae</option>
+								<option value="reggaeton">Reggaeton</option>
+								<option value="regional">Regional</option>
+								<option value="rock">Rock</option>
+								<option value="rock-alternativo">Rock Alternativo</option>
+								<option value="rockabilly">Rockabilly</option>
+								<option value="romantica">Romântico</option>
+								<option value="samba">Samba</option>
+								<option value="samba-enredo">Samba Enredo</option>
+								<option value="sertanejo">Sertanejo</option>
+								<option value="ska">Ska</option>
+								<option value="soft-rock">Soft Rock</option>
+								<option value="soul-music">Soul Music</option>
+								<option value="surf-music">Surf Music</option>
+								<option value="tecnopop">Tecnopop</option>
+								<option value="trance">Trance</option>
+								<option value="trilha-sonora">Trilha Sonora</option>
+								<option value="trip-hop">Trip-Hop</option>
+								<option value="velha-guarda">Velha Guarda</option>
+								<option value="world-music">World Music</option>
+							</select>
 
 							<div class="form-group">
-								<div class="col-md-10">
+								<div class="col-md-12">
+
 									<div class="checkbox">
 										<label><input type="checkbox" value="artista">Artista</label>
-									</div>
-									<div class="checkbox">
 										<label><input type="checkbox" value="album">Album</label>
-									</div>
-									<div class="checkbox">
 										<label><input type="checkbox" value="conteudo">Conteúdo</label>
-									</div>
-									<div class="checkbox">
 										<label><input type="checkbox" value="titulo">Título</label>
-									</div>
-									<div class="checkbox">
 										<label><input type="checkbox" value="genero">Gênero</label>
 									</div>
-								</div>
-								<!-- Lista de estilos musicais -->
-								<div class="col-md-2">
-									<select class="form-control">
-										<option>Todos os estilos</option>
-										<option value="axe">Axé</option>
-										<option value="black-music">Black Music</option>
-										<option value="blues">Blues</option>
-										<option value="bossa-nova">Bossa Nova</option>
-										<option value="chillout">Chillout</option>
-										<option value="classic-rock">Classic Rock</option>
-										<option value="classico">Clássico</option>
-										<option value="country">Country</option>
-										<option value="dance">Dance</option>
-										<option value="disco">Disco</option>
-										<option value="electronica">Electronica</option>
-										<option value="emocore">Emocore</option>
-										<option value="fado">Fado</option>
-										<option value="folk">Folk</option>
-										<option value="forro">Forró</option>
-										<option value="funk">Funk</option>
-										<option value="funk-carioca">Funk Carioca</option>
-										<option value="gospel">Gospel/Religioso</option>
-										<option value="gotico">Gótico</option>
-										<option value="grunge">Grunge</option>
-										<option value="hard-rock">Hard Rock</option>
-										<option value="hardcore">Hardcore</option>
-										<option value="heavy-metal">Heavy Metal</option>
-										<option value="hip-hop">Hip Hop</option>
-										<option value="house">House</option>
-										<option value="indie">Indie</option>
-										<option value="industrial">Industrial</option>
-										<option value="infantil">Infantil</option>
-										<option value="instrumental">Instrumental</option>
-										<option value="j-pop">J-Pop/J-Rock</option>
-										<option value="jazz">Jazz</option>
-										<option value="jovem-guarda">Jovem Guarda</option>
-										<option value="k-pop-k-rock">K-Pop/K-Rock</option>
-										<option value="kizomba">Kizomba</option>
-										<option value="metal">Metal</option>
-										<option value="mpb">MPB</option>
-										<option value="new-age">New Age</option>
-										<option value="new-wave">New Wave</option>
-										<option value="pagode">Pagode</option>
-										<option value="piano-rock">Piano Rock</option>
-										<option value="pop">Pop</option>
-										<option value="pop-punk">Pop/Punk</option>
-										<option value="pop-rock">Pop/Rock</option>
-										<option value="pos-punk">Pós-Punk</option>
-										<option value="post-rock">Post-Rock</option>
-										<option value="power-pop">Power-Pop</option>
-										<option value="progressivo">Progressivo</option>
-										<option value="psicodelia">Psicodelia</option>
-										<option value="punk-rock">Punk Rock</option>
-										<option value="r-n-b">R&B</option>
-										<option value="rap">Rap</option>
-										<option value="reggae">Reggae</option>
-										<option value="reggaeton">Reggaeton</option>
-										<option value="regional">Regional</option>
-										<option value="rock">Rock</option>
-										<option value="rock-alternativo">Rock Alternativo</option>
-										<option value="rockabilly">Rockabilly</option>
-										<option value="romantica">Romântico</option>
-										<option value="samba">Samba</option>
-										<option value="samba-enredo">Samba Enredo</option>
-										<option value="sertanejo">Sertanejo</option>
-										<option value="ska">Ska</option>
-										<option value="soft-rock">Soft Rock</option>
-										<option value="soul-music">Soul Music</option>
-										<option value="surf-music">Surf Music</option>
-										<option value="tecnopop">Tecnopop</option>
-										<option value="trance">Trance</option>
-										<option value="trilha-sonora">Trilha Sonora</option>
-										<option value="trip-hop">Trip-Hop</option>
-										<option value="velha-guarda">Velha Guarda</option>
-										<option value="world-music">World Music</option>
-									</select>
+
 								</div>
 							</div>
 						</form>

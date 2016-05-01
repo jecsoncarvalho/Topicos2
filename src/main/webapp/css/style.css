@@ -1,7 +1,19 @@
+body {
+	background-color: #ffffff;
+}
+
 .container {
 	padding-top: 2em;
 }
 
 .jumbotron {
 	text-align: center;
+	background-color: #9acfea;
+	box-shadow: 2px 2px 2px #333;
+	-webkit-box-shadow: 2px 2px 2px #333;
+	-moz-box-shadow: 2px 2px 2px #ffc;
+}
+
+.checkbox {
+	padding-top: 2em;
 }
